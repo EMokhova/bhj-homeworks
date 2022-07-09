@@ -4,7 +4,7 @@ let lostMole = document.getElementById('lost');
 let wings = parseInt(deadMole.textContent);
 let losts = parseInt(lostMole.textContent);
 
-function checkGame(deadMole, lostMole) {
+function GameOwer(deadMole, lostMole) {
     console.log(deadMole, lostMole);
     if (deadMole === 10) {
         alert("Победа!");
@@ -24,6 +24,6 @@ for (let i = 1; i <= 9; i++) {
             losts += 1;
             lostMole.textContent = losts;
         };
-        checkGame(wings, losts);
+        GameOwer(wings, losts);
     };
 };
